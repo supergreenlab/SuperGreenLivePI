@@ -1,2 +1,2 @@
-NOOBS_NAME="Raspbian"
-NOOBS_DESCRIPTION="A port of Debian with the Raspberry Pi Desktop"
+NOOBS_NAME="SuperGreenTimelapse"
+NOOBS_DESCRIPTION="Remote camera and timelapse for home growers."
