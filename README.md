@@ -1,3 +1,11 @@
+# SuperGreenLivePI
+
+Ready-to-use image for home growers you want to keep an eye on there plants.
+
+For the basic usage please see [SuperGreenTimelapse](https://github.com/SuperGreenLab/SuperGreenTimelapse).
+
+This is based on [pi-gen](https://github.com/RPi-Distro/pi-gen), the following is their untouched README, it'll get you though the building/customization process.
+
 # pi-gen
 
 _Tool used to create the raspberrypi.org Raspbian images_
