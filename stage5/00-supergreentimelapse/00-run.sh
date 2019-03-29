@@ -12,3 +12,5 @@ install -v -m 644 "files/timelapse_controllerid" "${ROOTFS_DIR}/boot/timelapse_c
 
 install -v -m 644 "files/wpa_supplicant.conf" "${ROOTFS_DIR}/boot/wpa_supplicant.conf"
 
+install -v -m 644 "files/hosts" "${ROOTFS_DIR}/etc/hosts"
+install -v -m 644 "files/hostname" "${ROOTFS_DIR}/etc/hostname"
