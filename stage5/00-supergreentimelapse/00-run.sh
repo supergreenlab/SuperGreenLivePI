@@ -4,6 +4,8 @@ install -v -o 1000 -g 1000 -m 755 "files/timelapse" "${ROOTFS_DIR}/home/${FIRST_
 install -v -o 1000 -g 1000 -m 644 "files/watermark-logo.png" "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/watermark-logo.png"
 install -v -o 1000 -g 1000 -m 644 "files/plume.otf" "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/plume.otf"
 
+install -v -o 1000 -g 1000 -m 644 "files/timelapse.log" "${ROOTFS_DIR}/var/log/timelapse.log"
+
 install -v -m 644 "files/timelapse_dropbox_token" "${ROOTFS_DIR}/boot/timelapse_dropbox_token"
 install -v -m 644 "files/timelapse_uploadname" "${ROOTFS_DIR}/boot/timelapse_uploadname"
 install -v -m 644 "files/timelapse_name" "${ROOTFS_DIR}/boot/timelapse_name"
