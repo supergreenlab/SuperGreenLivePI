@@ -1,2 +1,7 @@
 ffmpeg
 imagemagick
+bluetooth
+bluez
+libbluetooth-dev
+libudev-dev
+nodejs

@@ -1,0 +1,13 @@
+[Unit]
+Description=SuperGreenLab's ble based rpi wifi config
+Documentation=https://github.com/supergreenlab
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/node /home/pi/ble_set_wifi/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

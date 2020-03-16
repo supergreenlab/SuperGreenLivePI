@@ -2,6 +2,8 @@
 
 install -m 644 files/sources.list "${ROOTFS_DIR}/etc/apt/"
 install -m 644 files/raspi.list "${ROOTFS_DIR}/etc/apt/sources.list.d/"
+install -m 644 files/nodesource.list "${ROOTFS_DIR}/etc/apt/sources.list.d/"
+
 sed -i "s/RELEASE/${RELEASE}/g" "${ROOTFS_DIR}/etc/apt/sources.list"
 sed -i "s/RELEASE/${RELEASE}/g" "${ROOTFS_DIR}/etc/apt/sources.list.d/raspi.list"
 
@@ -13,6 +15,7 @@ else
 fi
 
 on_chroot apt-key add - < files/raspberrypi.gpg.key
+on_chroot apt-key add - < files/nodesource.gpg.key
 on_chroot << EOF
 apt-get update
 apt-get dist-upgrade -y
