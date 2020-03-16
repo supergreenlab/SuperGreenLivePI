@@ -16,3 +16,10 @@ install -v -m 644 "files/wpa_supplicant.conf" "${ROOTFS_DIR}/boot/wpa_supplicant
 
 install -v -m 644 "files/hosts" "${ROOTFS_DIR}/etc/hosts"
 install -v -m 644 "files/hostname" "${ROOTFS_DIR}/etc/hostname"
+
+install -v -m 644 "files/ssh" "${ROOTFS_DIR}/boot/ssh"
+
+rsync -av --no-o --no-g "files/ble_set_wifi" "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/"
+
+install -v -m 644 "files/ble_set_wifi/ble-set-wifi.service" "${ROOTFS_DIR}/etc/systemd/system/ble-set-wifi.service"
+ln -sf "/etc/systemd/system/ble-set-wifi.service" "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/ble-set-wifi.service"
