@@ -11,6 +11,7 @@ install -v -m 644 "files/timelapse_uploadname" "${ROOTFS_DIR}/boot/timelapse_upl
 install -v -m 644 "files/timelapse_name" "${ROOTFS_DIR}/boot/timelapse_name"
 install -v -m 644 "files/timelapse_strain" "${ROOTFS_DIR}/boot/timelapse_strain"
 install -v -m 644 "files/timelapse_controllerid" "${ROOTFS_DIR}/boot/timelapse_controllerid"
+install -v -m 644 "files/timelapse_rotate" "${ROOTFS_DIR}/boot/timelapse_rotate"
 
 install -v -m 644 "files/wpa_supplicant.conf" "${ROOTFS_DIR}/boot/wpa_supplicant.conf"
 
